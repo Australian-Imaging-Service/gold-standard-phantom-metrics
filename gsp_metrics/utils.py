@@ -3,7 +3,7 @@ from pydra.compose import python
 
 
 @python.define(outputs=["a_metric"])
-def gradient_analysis(
+def GradientAnalysis(
     dmri: DicomSeries,
 ) -> float:
     """Analyses a DICOM series of a Gold Standard Phantom DWI scan to compute the gradient metric.
